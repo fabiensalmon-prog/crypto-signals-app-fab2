@@ -1,0 +1,19 @@
+app:
+  symbols: [BTC/USDT, ETH/USDT, BNB/USDT, SOL/USDT, XRP/USDT, ADA/USDT, DOGE/USDT, TON/USDT, TRX/USDT, AVAX/USDT]
+  timeframes: [15m, 1h, 4h]
+  top_n_signals: 8
+  exchange: binance
+
+risk:
+  fee_bps: 2.5
+  slippage_bps: 1.0
+  atr_k_sl: 2.5
+  atr_k_tp: 3.5
+  trail_start_R: 1.0
+  trail_atr_mult: 2.0
+  risk_pct_per_trade: 0.5
+
+backtest:
+  train_ratio: 0.7
+  walkforward_windows: 3
+  initial_cash: 10000
