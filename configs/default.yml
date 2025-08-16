@@ -2,7 +2,7 @@ app:
   symbols: [BTC/USDT, ETH/USDT, BNB/USDT, SOL/USDT, XRP/USDT, ADA/USDT, DOGE/USDT, TON/USDT, TRX/USDT, AVAX/USDT]
   timeframes: [15m, 1h, 4h]
   top_n_signals: 8
-  exchange: binance
+  exchange: okx
 
 risk:
   fee_bps: 2.5
