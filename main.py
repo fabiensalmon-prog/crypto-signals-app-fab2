@@ -13,7 +13,7 @@ st.caption('Manual trades only — mobile-first.')
 
 # Sidebar collapsed controls
 with st.expander('Settings', expanded=False):
-    exchange = st.selectbox('Exchange', [cfg['app']['exchange']], index=0)
+    exchange = st.selectbox('Exchange', ['okx','bybit','kraken','coinbase','kucoin','binance'], index=0)
     symbols = st.multiselect('Pairs', cfg['app']['symbols'], default=cfg['app']['symbols'][:6])
     tf = st.selectbox('Timeframe', cfg['app']['timeframes'], index=1)
     account_equity = st.number_input('Account USD', value=float(cfg['backtest']['initial_cash']), step=1000.0)
